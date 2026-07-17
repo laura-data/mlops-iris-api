@@ -41,10 +41,6 @@ class IrisFeatures(BaseModel):
 
 # prediction endpoint
 
-@app.get("/")
-def read_root():
-    return {"status": "API is alive!"}
-
 
 @app.post("/predict")
 def predict(features: IrisFeatures):
